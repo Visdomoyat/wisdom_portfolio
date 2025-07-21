@@ -13,7 +13,7 @@ function Heading() {
                 </div>
                 <div className='heading-content'>
                     <div className='social-links'>
-                        <p>Connect with me on: +1 (234) 817-7874</p>
+                        <p>Connect with me: +1 (234) 817-7874</p>
                         <p>Email me at: wisdomoyatokun@gmail.com</p>
                         <p>Kent, OH.</p>
                         <div className='social-links-container'>
