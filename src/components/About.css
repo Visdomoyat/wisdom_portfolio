@@ -1,0 +1,216 @@
+/* About page container */
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+/* Main heading */
+.about-container h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About description */
+.about-container > p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 2;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  border-left: 5px solid #667eea;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Key strengths section */
+.about-container h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Strengths list */
+.about-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.about-container li {
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #34495e;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container li::before {
+  content: '✨';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.about-container li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-left-color: #764ba2;
+  background: rgba(255, 255, 255, 1);
+}
+
+.about-container li:hover::before {
+  left: 10px;
+  opacity: 1;
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-container {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.about-container h1 {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.about-container > p {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.about-container h2 {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.about-container li {
+  animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.about-container li:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.about-container li:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.about-container li:nth-child(4) {
+  animation-delay: 1.4s;
+}
+
+.about-container li:nth-child(5) {
+  animation-delay: 1.6s;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .about-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-container > p {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+
+  .about-container li {
+    font-size: 1rem;
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-container > p {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .about-container li {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+}
