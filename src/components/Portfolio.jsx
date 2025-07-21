@@ -41,7 +41,7 @@ function Portfolio() {
         {
             id: 5,
             title: 'Resource-management-simulation (Solo Project)',
-            description: 'This is a simple React-based team building and resource management gmae where user assemble a squad of fighters within a budget, optimizing for strength and agility.',
+            description: 'This is a simple React-based team building and resource management game where user assemble a squad of fighters within a budget, optimizing for strength and agility.',
             image: zombieFighters, // Using local image
             link: 'https://zombiecart.netlify.app/'
         }
