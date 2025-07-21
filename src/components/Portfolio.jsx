@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import './Portfolio.css'
 // Import local images
 import visdomDev from '../assets/images/Visdom-Dev.png'
@@ -63,8 +63,8 @@ function Portfolio() {
                 {fullStackPortfolio.map((project) => (
                     <div key={project.id} className="portfolio-item">
                         <div className="image-container">
-                            <img 
-                                src={project.image} 
+                            <img
+                                src={project.image}
                                 alt={project.title}
                                 className="project-image"
                             />
@@ -84,8 +84,8 @@ function Portfolio() {
                 {InstructionalDesignPortfolio.map((project) => (
                     <div key={project.id} className="portfolio-item">
                         <div className="image-container">
-                            <img 
-                                src={project.image} 
+                            <img
+                                src={project.image}
                                 alt={project.title}
                                 className="project-image"
                             />
