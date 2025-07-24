@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Heading.css'
 import WisdomPicture from '../assets/images/WisdomPicture.jpg'
+import ResumeModal from './ResumeModal'
 
 
 function Heading() {
+    const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+
     return (
         <div>
             <div className='heading-container'>
@@ -19,7 +22,8 @@ function Heading() {
                         <div className='social-links-container'>
                             <a href='https://www.linkedin.com/in/woyat/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
                             <a href='https://github.com/Visdomoyat' target='_blank' rel='noopener noreferrer'>GitHub</a>
-                            <a href='/WisdomOyatokun_FullStackDeveloper.pdf' target='_blank' rel='noopener noreferrer' className='resume-btn'>Download my Resume</a>
+                            
+                            <button onClick={() => setIsResumeModalOpen(true)} className='resume-btn'>Download my Resume</button>
                         </div>
 
   
@@ -28,6 +32,10 @@ function Heading() {
 
 
             </div>
+            <ResumeModal 
+                isOpen={isResumeModalOpen} 
+                onClose={() => setIsResumeModalOpen(false)} 
+            />
         </div>
     )
 }
