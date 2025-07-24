@@ -19,10 +19,10 @@ function Heading() {
                         <div className='social-links-container'>
                             <a href='https://www.linkedin.com/in/woyat/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>
                             <a href='https://github.com/Visdomoyat' target='_blank' rel='noopener noreferrer'>GitHub</a>
-                            <a href='/WisdomOyatokun_Resume.pdf' target='_blank' rel='noopener noreferrer' className='resume-btn'>Download my Resume</a>
+                            <a href='/WisdomOyatokun_FullStackDeveloper.pdf' target='_blank' rel='noopener noreferrer' className='resume-btn'>Download my Resume</a>
                         </div>
 
-
+  
                     </div>
                 </div>
 
