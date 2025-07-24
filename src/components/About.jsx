@@ -6,11 +6,15 @@ function About() {
         <div className="about-container">
             <h1>About me</h1>
             <p>
-                I am an Educator and Full Stack Developer with a hybrid skill set in Instructional Design and Web Development, dedicated to building powerful, technology-enhanced learning experiences. I specialize in bridging curriculum strategy, pedagogy, and modern web technologies to support academic institutions, vocational programs, and education-driven businesses.
+                I am a Full Stack Developer with a background in instructional design, passionate about building scalable, user-focused web applications that power modern learning experiences. With a unique blend of technical expertise and educational insight, I design and develop digital tools that don’t just function well — they teach, engage, and deliver real results.
 
-                Using proven frameworks like the ADDIE model, Gagne's Nine Events of Instruction, and Bloom's Taxonomy, I design engaging, outcome-based learning solutions that are grounded in instructional best practices. On the technical side, I develop custom, scalable platforms using React, Node.js, Supabase, MongoDb, PostgreSQL, Python-Django, TailwindCSS, and other technologies—enabling interactivity, personalization, and performance beyond standard LMS capabilities.
+                My journey started in education, where I learned to design learning experiences that are goal-driven, accessible, and outcomes-oriented. Today, I bring that same mindset into full stack development — combining technologies like React, Node.js, Django, PostgreSQL, and Supabase to build responsive frontends and robust backends that serve learners, educators, and educational businesses alike.
 
-                With hands-on experience in platforms like Canvas, Blackboard, Articulate Storyline, and other LMS tools, I create end-to-end learning ecosystems—from instructional content and assessments to user dashboards and analytics—ensuring learners have seamless, accessible, and impactful experiences across devices and environments.
+                Whether it is developing curriculum-driven platforms, integrating real-time dashboards, or creating interactive modules and simulations, I focus on building solutions that improve how people learn and interact with content. I also bring experience working in agile, startup-like environments, where rapid iteration, cross-functional collaboration, and user feedback shape everything I build.
+
+                At the core of my work is a belief: technology should make learning more meaningful, not more complicated. I’m always exploring how to bridge pedagogy and programming to create products that empower learners and educators.
+
+                If you're looking for someone who can connect the dots between instructional strategy and modern web development, let's connect.
             </p>
             <h2>Key Strengths</h2>
             <ul>
